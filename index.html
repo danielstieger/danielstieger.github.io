@@ -95,7 +95,45 @@
   <main class="mdl-layout__content">
 
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * --> 
-  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">	
+  <section class="section--center mdl-card mdl-grid mdl-shadow--2dp">
+      <div class="mdl-card___supporting-text">
+  	  <div class="mdl-cell mdl-cell--3-col">
+	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	    <input class="mdl-textfield__input" type="text" id="sample3" value="EAN 1231233222">
+	    <label class="mdl-textfield__label" for="sample3">Text...</label>
+	  </div>
+      </div>
+
+	  <!-- Numeric Textfield with Floating Label -->
+	  <div class="mdl-cell mdl-cell--3-col"> 
+	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" value="134433442">
+		<label class="mdl-textfield__label" for="sample4">EAN Number...</label>
+	    <span class="mdl-textfield__error">Input is not a number!</span>
+	  </div>
+	  </div>
+	  
+	  <!-- Numeric Textfield with Floating Label -->
+	  <div class="mdl-cell mdl-cell--3-col"> 
+	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample5" value="134433442">
+	    <label class="mdl-textfield__label" for="sample5">Amount...</label>
+	    <span class="mdl-textfield__error">Input is not a number!</span>
+	  </div>
+	  </div>
+	
+	  <!-- Numeric Textfield with Floating Label -->
+	  <div class="mdl-cell mdl-cell--3-col"> 
+	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample6" value="134433442">
+	    <label class="mdl-textfield__label" for="sample6">Tax...</label>
+	    <span class="mdl-textfield__error">Input is not a number!</span>
+	  </div>  
+	  </div>
+      </div>
+  </section>
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * --> 
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">  
     <div class="mdl-card mdl-cell mdl-cell--12-col">
  	  <div class="mdl-card__supporting-text">
 		Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.

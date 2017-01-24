@@ -43,6 +43,10 @@ html, body {
   margin: 0;
 }
 
+.mom div.div--center {
+  max-width: 860px;
+}
+
 .mom section.section--center {
   max-width: 860px;
 }
