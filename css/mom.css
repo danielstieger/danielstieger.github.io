@@ -71,8 +71,8 @@ html, body {
   font-size: 3rem;
 }
 
-.mom section > button {
-  display: inline;
+.mom section > .multiButtonRight, .mom section > button {
+  display: block;
   position: absolute;
   z-index: 99;
   top: 8px;
