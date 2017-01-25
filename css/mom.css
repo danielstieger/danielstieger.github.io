@@ -120,7 +120,13 @@ html, body {
   height: 64px;
   border-radius: 32px;
   margin: 8px 0;
+  line-height: 64px;
+  text-align: center;
+  color: white;
+  font-size: 200%;
 }
+
+
 .mom section.section--footer .section__circle--big {
   width: 100px;
   height: 100px;
@@ -151,4 +157,24 @@ html, body {
 }
 .mom #features h4, #features h5 {
   margin-bottom: 16px;
+}
+
+
+.mom--red {
+    background-color: red !important;
+}
+
+.mom--yellow {
+    background-color: yellow !important;
+}
+
+.mom--green {
+    background-color: green !important;
+}
+
+
+
+/* ------------- */
+.text--right {
+    text-align: right;
 }
