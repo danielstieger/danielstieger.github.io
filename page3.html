@@ -44,11 +44,25 @@
   </head>
   
   <body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+
+  <dialog class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Speichern?</h4>
+    <div class="mdl-dialog__content">
+      <p>
+        Wollen Sie dieses Kommando wirklich abbrechen?
+      </p>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button yesAction">Ja</button>
+      <button type="button" class="mdl-button closeAction">Nein</button>
+    </div>
+  </dialog>
+
   <form action="#">
   
   <div class="mom mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header mdl-layout__header--waterfall">
-	<a class="mdl-layout-icon mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/index.html">
+	<a id="backbutton" class="mdl-layout-icon mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
 	  <i class="material-icons">arrow_back</i>
 	</a>
 
@@ -458,8 +472,26 @@
   <section> </section>
   </main>
   </div>
-  
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#backbutton');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+
+    dialog.querySelector('.closeAction').addEventListener('click', function() {
+      dialog.close();
+    });
+    dialog.querySelector('.yesAction').addEventListener('click', function() {
+      dialog.close();
+      window.location.href = "/index.html";
+    });
+  </script>
   </form>
   </body>
 </html>
