@@ -184,4 +184,14 @@ html, body {
 /* ------------- */
 .text--right {
     text-align: right;
+    padding-right: 5px;
+}
+
+.text--bold {
+     font-weight: bold;
+}
+
+.delegate--background{
+    background-color: #EEEEEE;
+    padding: 10px;
 }

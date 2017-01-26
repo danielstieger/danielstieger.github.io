@@ -9,7 +9,7 @@
 
 
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
@@ -37,263 +37,412 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-purple.min.css" />
-    <link rel="stylesheet" href="css/mom.css" />
-  </head>
-  
-  <body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-  <form action="#">
-  
-  <div class="mom mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-	<a class="mdl-layout-icon mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/index.html">
-	  <i class="material-icons">arrow_back</i>
-	</a>
-    
-    <!-- Top row, always visible -->
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout__title">Wareneingang / Morawa 27.01.17 / GRAPH_EDIT</span>
-      <div class="mdl-layout-spacer"></div>
-      
-      
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#">Nav link 1</a>
-        <a class="mdl-navigation__link" href="#">Nav link 2</a>
-        <a class="mdl-navigation__link" href="#">Nav link 3</a>
-      </nav>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-purple.min.css"/>
+    <link rel="stylesheet" href="css/mom.css"/>
+</head>
+
+<body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<form action="#">
+
+    <div class="mom mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+            <a class="mdl-layout-icon mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+               href="/index.html">
+                <i class="material-icons">arrow_back</i>
+            </a>
+
+            <!-- Top row, always visible -->
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout__title">Wareneingang </span>
+                <div class="mdl-layout-spacer"></div>
+
+
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="#">freigeben</a>
+                    <a class="mdl-navigation__link" href="#">speichern</a>
+                </nav>
+            </div>
+
+            <!-- Bottom row, not visible on scroll -->
+            <div class="mom-header-row mdl-layout__header-row">
+                <span class="mdl-layout__title">Z-LA / 27.01.17 Beleg 67297</span>
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">Link 4</a>
+                    <a class="mdl-navigation__link" href="">Link 5</a>
+                    <a class="mdl-navigation__link" href="">Link 6</a>
+                    <a class="mdl-navigation__link" href="">Link 7</a>
+                </nav> -->
+            </div>
+
+        </header>
+        <main class="mdl-layout__content">
+
+            <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                <div class="mdl-card mdl-cell mdl-cell--12-col">
+
+                    <div class="mdl-card__supporting-text">
+                         <div class="mdl-grid">
+
+                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="sample3" value="27.1.2017">
+                                    <label class="mdl-textfield__label" for="sample3">Belegdatum</label>
+                                </div>
+                            </div>
+
+                            <!-- Numeric Textfield with Floating Label -->
+                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text"
+                                           id="sample4" value="offen">
+                                    <label class="mdl-textfield__label" for="sample4">Status</label>
+                                    <span class="mdl-textfield__error">Input is not a number!</span>
+                                </div>
+                            </div>
+
+                            <!-- Numeric Textfield with Floating Label -->
+                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?"
+                                           id="sample5" value="1">
+                                    <label class="mdl-textfield__label" for="sample5">Version</label>
+                                    <span class="mdl-textfield__error">Input is not a number!</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a href="#" class="mdl-button"> Freigeben </a>
+                    </div>
+                </div>
+
+                <div class="mom multiButtonRight">
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn20">
+                        <i class="material-icons">print</i>
+                    </button>
+
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn10">
+                        <i class="material-icons">more_vert</i>
+                    </button>
+                </div>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn10">
+                    <li class="mdl-menu__item">Lieferliste vorschau</li>
+                    <li class="mdl-menu__item" disabled>Wareneingang buchen</li>
+                    <li class="mdl-menu__item">Bestände revisionieren</li>
+                </ul>
+
+            </section>
+
+
+            <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                <div class="mdl-card mdl-cell mdl-cell--12-col">
+
+                    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                        <h5 class="mdl-cell mdl-cell--12-col">Bewegungen</h5>
+
+
+                        <div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div>
+
+                        <div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div>
+                        <div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div><div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div><div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div><div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div><div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div><div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div><div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div><div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mom--green">L</div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <div class="mdl-grid mdl-grid--no-spacing">
+
+                                <div class="mdl-cell mdl-cell--10-col text--bold">Fladenbrot foliert (500 g)</div>
+                                <div class="mdl-cell mdl-cell--2-col text--right">24115</div>
+                                <div class="mdl-cell mdl-cell--2-col">Einzel</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0</div>
+                                <div class="mdl-cell mdl-cell--2-col">Avis</div>
+
+
+                                <div class="mdl-cell mdl-cell--1-col text--right">3.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.00</div>
+                                <div class="mdl-cell mdl-cell--1-col">STK</div>
+                                <div class="mdl-cell mdl-cell--1-col text--right">0.89</div>
+                                <div class="mdl-cell mdl-cell--2-col">EUR/STK</div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="mdl-card__actions">
+                            <a href="#" class="mdl-button">Read our features</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+                        id="btn0">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right"
+                    for="btn0">
+                    <li class="mdl-menu__item"> Position bearbeiten </li>
+                    <li class="mdl-menu__item"> Position erfassen </li>
+                    <li class="mdl-menu__item"> Offene Positionen reklamieren </li>
+                    <li class="mdl-menu__item"> Offene Positionen übernehmen </li>
+
+                </ul>
+
+            </section>
+
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                <div class="mdl-card mdl-cell mdl-cell--12-col">
+                    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                        <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
+                        <div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mdl-color--primary"></div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla
+                            tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                        </div>
+                        <div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mdl-color--primary"></div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla
+                            tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                        </div>
+                        <div class="section__circle-container mdl-cell mdl-cell--1-col">
+                            <div class="section__circle-container__circle mdl-color--primary"></div>
+                        </div>
+                        <div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla
+                            tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a href="#" class="mdl-button">Read our features</a>
+                    </div>
+                </div>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
+                    <li class="mdl-menu__item">Lorem</li>
+                    <li class="mdl-menu__item" disabled>Ipsum</li>
+                    <li class="mdl-menu__item">Dolor</li>
+                </ul>
+            </section>
+
+
+            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            </section>
+
+
+        </main>
     </div>
-    
-    <!-- Bottom row, not visible on scroll -->
-    <div class="mom-header-row mdl-layout__header-row">
-       <span class="mdl-layout__title">Longer Page Title Here</span>
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link 4</a>
-        <a class="mdl-navigation__link" href="">Link 5</a>
-        <a class="mdl-navigation__link" href="">Link 6</a>
-        <a class="mdl-navigation__link" href="">Link 7</a>
-      </nav>
-    </div>
-    
-  </header>
-  <main class="mdl-layout__content">
 
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-    <div class="mdl-card mdl-cell mdl-cell--12-col">
-
- 	  <div class="mdl-card__supporting-text">
-      <h4> Aktueller Wareneingang </h4>
-	  <div class="mdl-grid">
-
-      <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
-	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	    <input class="mdl-textfield__input" type="text" id="sample3" value="EAN 1231233222">
-	    <label class="mdl-textfield__label" for="sample3">Text...</label>
-	  </div>
-      </div>
-
-	  <!-- Numeric Textfield with Floating Label -->
-	  <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
-	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" value="134433442">
-		<label class="mdl-textfield__label" for="sample4">EAN Number...</label>
-	    <span class="mdl-textfield__error">Input is not a number!</span>
-	  </div>
-	  </div>
-
-	  <!-- Numeric Textfield with Floating Label -->
-	  <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
-	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample5" value="134433442">
-	    <label class="mdl-textfield__label" for="sample5">Amount...</label>
-	    <span class="mdl-textfield__error">Input is not a number!</span>
-	  </div>
-	  </div>
-
-	  <!-- Numeric Textfield with Floating Label -->
-	  <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
-	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-invalid">
-	    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample6" value="134433442">
-	    <label class="mdl-textfield__label" for="sample6">Tax...</label>
-	    <span class="mdl-textfield__error">Steuer wert nich korrekt!</span>
-	  </div>
-	  </div>
-
-	  </div>
-
-	  </div>
-	  <div class="mdl-card__actions">
-		<a href="#" class="mdl-button"> Freigeben </a>
-	  </div>
-	</div>
-
-	<div class="mom multiButtonRight">
-	<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn20">
-	  <i class="material-icons">search</i>
-	</button>
-
-	<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn10">
-	  <i class="material-icons">more_vert</i>
-	</button>
-	</div>
-    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn10">
-	  <li class="mdl-menu__item">Lorem</li>
-	  <li class="mdl-menu__item" disabled>Ipsum</li>
-	  <li class="mdl-menu__item">Dolor</li>
-	</ul>
-
-  </section>
-
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->   
-  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-	<div class="mdl-card mdl-cell mdl-cell--12-col">
-	  <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-		<h4 class="mdl-cell mdl-cell--12-col">Details</h4>
-		<div class="section__circle-container mdl-cell mdl-cell--1-col">
-		  <div class="section__circle-container__circle mdl-color--primary"></div>
-		</div>
-		<div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
-
-		  <h5>Lorem ipsum dolor sit amet</h5>
-		  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-		</div>
-		<div class="section__circle-container mdl-cell mdl-cell--1-col">
-		  <div class="section__circle-container__circle mdl-color--primary"></div>
-		</div>
-		<div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
-		  <h5>Lorem ipsum dolor sit amet</h5>
-		  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-		</div>
-		<div class="section__circle-container mdl-cell mdl-cell--1-col">
-		  <div class="section__circle-container__circle mdl-color--primary"></div>
-		</div>
-		<div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
-		  <h5>Lorem ipsum dolor sit amet</h5>
-		  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-		</div>
-	  </div>
-	  <div class="mdl-card__actions">
-		<a href="#" class="mdl-button">Read our features</a>
-	  </div>
-	</div>
-	<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-	  <i class="material-icons">more_vert</i>
-	</button>
-	<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-	  <li class="mdl-menu__item">Lorem</li>
-	  <li class="mdl-menu__item" disabled>Ipsum</li>
-	  <li class="mdl-menu__item">Dolor</li>
-	</ul>
-  </section>
-
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-	<div class="mdl-card mdl-cell mdl-cell--12-col">
-
-		<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-		<h5 class="mdl-cell mdl-cell--12-col">Positionen Ampelsystem</h5>
-
-
-		<div class="section__circle-container mdl-cell mdl-cell--1-col">
-		  <div class="section__circle-container__circle mom--green">L</div>
-		</div>
-		<div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
-		  <div class="mdl-grid mdl-grid--no-spacing">
-			  <div class="mdl-cell mdl-cell--10-col"><strong>Lorem ipsum dolor sit</strong></div>
-			  <div class="mdl-cell mdl-cell--2-col text--right">amet</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">Dolor ex</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">deserunt aute</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">fugiat</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">aute nulla ea</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">sunt</div>
-		 	  <div class="mdl-cell mdl-cell--2-col text--right">10 EUR</div>
-		   </div>
-		</div>
-
-
-			<div class="section__circle-container mdl-cell mdl-cell--1-col">
-		  <div class="section__circle-container__circle mom--red">D</div>
-		</div>
-		<div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
-		  <div class="mdl-grid mdl-grid--no-spacing">
-			  <div class="mdl-cell mdl-cell--10-col"><strong>Lorem ipsum dolor sit</strong></div>
-			  <div class="mdl-cell mdl-cell--2-col text--right">amet</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">Dolor ex</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">deserunt aute</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">fugiat</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">aute nulla ea</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">sunt</div>
-		 	  <div class="mdl-cell mdl-cell--2-col text--right">10 EUR</div>
-		   </div>
-		</div>
-
-			<div class="section__circle-container mdl-cell mdl-cell--1-col">
-		  <div class="section__circle-container__circle mom--yellow"></div>
-		</div>
-		<div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
-		  <div class="mdl-grid mdl-grid--no-spacing">
-			  <div class="mdl-cell mdl-cell--10-col"><strong>Lorem ipsum dolor sit</strong></div>
-			  <div class="mdl-cell mdl-cell--2-col text--right">amet</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">Dolor ex</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">deserunt aute</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">fugiat</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">aute nulla ea</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">sunt</div>
-		 	  <div class="mdl-cell mdl-cell--2-col text--right">10 EUR</div>
-		   </div>
-		</div>
-
-			<div class="section__circle-container mdl-cell mdl-cell--1-col">
-		  <div class="section__circle-container__circle mom--green"></div>
-		</div>
-		<div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone">
-		  <div class="mdl-grid mdl-grid--no-spacing">
-			  <div class="mdl-cell mdl-cell--10-col"><strong>Lorem ipsum dolor sit</strong></div>
-			  <div class="mdl-cell mdl-cell--2-col text--right">amet</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">Dolor ex</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">deserunt aute</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">fugiat</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">aute nulla ea</div>
-		 	  <div class="mdl-cell mdl-cell--2-col">sunt</div>
-		 	  <div class="mdl-cell mdl-cell--2-col text--right">10 EUR</div>
-		   </div>
-		</div>
-
-
-
-	  </div>
-	  <div class="mdl-card__actions">
-		<a href="#" class="mdl-button">Read our features</a>
-	  </div>
-	</div>
-	<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-	  <i class="material-icons">more_vert</i>
-	</button>
-	<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-	  <li class="mdl-menu__item">Lorem</li>
-	  <li class="mdl-menu__item" disabled>Ipsum</li>
-	  <li class="mdl-menu__item">Dolor</li>
-	</ul>
-  </section>
-
-
-
-
-
-
-
-  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-  </section>
-
-
-  </main>
-  </div>
-  
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  </form>
-  </body>
+</form>
+</body>
 </html>

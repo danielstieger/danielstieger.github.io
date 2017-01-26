@@ -56,114 +56,61 @@
     <!-- Top row, always visible -->
     <div class="mdl-layout__header-row">
 
-      <span class="mdl-layout__title">Wareneingang / Morawa 27.01.17 / GRAPH_EDIT</span>
+      <span class="mdl-layout__title">Wareneingang Lieferung Zentrallager</span>
       <div class="mdl-layout-spacer"></div>
       
-      
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#">Nav link 1</a>
-        <a class="mdl-navigation__link" href="#">Nav link 2</a>
-        <a class="mdl-navigation__link" href="#">Nav link 3</a>
-      </nav>
+
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="#"> <i class="material-icons">playlist_add_check</i> OK</a>
+
+		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn10">
+        <i class="material-icons">more_vert</i>
+        </button>
+
+		<ul class="mom mom-topmenu mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn10">
+			<li class="mdl-menu__item">Lieferliste vorschau</li>
+			<li class="mdl-menu__item" disabled>Wareneingang buchen</li>
+			<li class="mdl-menu__item">Bestände revisionieren</li>
+		</ul>
 
 	</div>
     
     <!-- Bottom row, not visible on scroll -->
     <div class="mom-header-row mdl-layout__header-row">
-       <span class="mdl-layout__title">Longer Page Title Here</span>
+       <span class="mdl-layout__title">Bäckerei 26.1.2017</span>
       <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
+      <!-- Navigation
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="">Link 4</a>
         <a class="mdl-navigation__link" href="">Link 5</a>
         <a class="mdl-navigation__link" href="">Link 6</a>
         <a class="mdl-navigation__link" href="">Link 7</a>
-      </nav>
+      </nav> -->
     </div>
     
   </header>
   <main class="mdl-layout__content">
 
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-    <div class="mdl-card mdl-cell mdl-cell--12-col">
-
- 	  <div class="mdl-card__supporting-text">
-      <h4> Aktueller Wareneingang </h4>
-	  <div class="mdl-grid">
-
-      <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
-	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	    <input class="mdl-textfield__input" type="text" id="sample3" value="EAN 1231233222">
-	    <label class="mdl-textfield__label" for="sample3">Text...</label>
-	  </div>
-      </div>
-
-	  <!-- Numeric Textfield with Floating Label -->
-	  <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
-	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" value="134433442">
-		<label class="mdl-textfield__label" for="sample4">EAN Number...</label>
-	    <span class="mdl-textfield__error">Input is not a number!</span>
-	  </div>
-	  </div>
-
-	  <!-- Numeric Textfield with Floating Label -->
-	  <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
-	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample5" value="134433442">
-	    <label class="mdl-textfield__label" for="sample5">Amount...</label>
-	    <span class="mdl-textfield__error">Input is not a number!</span>
-	  </div>
-	  </div>
-
-	  <!-- Numeric Textfield with Floating Label -->
-	  <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
-	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-invalid">
-	    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample6" value="134433442">
-	    <label class="mdl-textfield__label" for="sample6">Tax...</label>
-	    <span class="mdl-textfield__error">Steuer wert nich korrekt!</span>
-	  </div>
-	  </div>
-
-	  </div>
-
-	  </div>
-	  <div class="mdl-card__actions">
-		<a href="#" class="mdl-button"> Freigeben </a>
-	  </div>
-	</div>
-
-	<div class="mom multiButtonRight">
-	<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn20">
-	  <i class="material-icons">search</i>
-	</button>
-
-	<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn10">
-	  <i class="material-icons">more_vert</i>
-	</button>
-	</div>
-    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn10">
-	  <li class="mdl-menu__item">Lorem</li>
-	  <li class="mdl-menu__item" disabled>Ipsum</li>
-	  <li class="mdl-menu__item">Dolor</li>
-	</ul>
-
-  </section>
 
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->   
   <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
     <div class="mdl-card mdl-cell mdl-cell--12-col">
 
  	  <div class="mdl-card__supporting-text">
-		<h4>Positionen</h4>
-	  </div>
+		<h4>Beleg</h4>
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--4-col delegate--background">Datum: 26.1.2017</div>
+			<div class="mdl-cell mdl-cell--4-col delegate--background">Status: offen</div>
+			<div class="mdl-cell mdl-cell--4-col delegate--background">Version: 1</div>
+		</div>
+
+	    </div>
 	</div>
+
 
 
 	<div class="mom multiButtonRight">
 		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn0">
-	  <i class="material-icons">search</i>
+	  <i class="material-icons">print</i>
 	</button>
 
 	<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
@@ -177,182 +124,338 @@
 
 	</div>
     <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-	  <li class="mdl-menu__item">Lorem</li>
-	  <li class="mdl-menu__item" disabled>Ipsum</li>
-	  <li class="mdl-menu__item">Dolor</li>
+		<li class="mdl-menu__item"> Position bearbeiten </li>
+        <li class="mdl-menu__item"> Position erfassen </li>
+        <li class="mdl-menu__item"> Offene Positionen reklamieren </li>
+        <li class="mdl-menu__item"> Offene Positionen übernehmen </li>
 	</ul>
 
 	  <table class="mdl-cell mdl-cell--12-col mdl-data-table mdl-js-data-table mdl-data-table--selectable">
 			<thead>
 			<tr>
-			  <th class="mdl-data-table__cell--non-numeric">Material</th>
-			  <th>Quantity</th>
-			  <th>Unit price</th>
+			  <th>Pos</th>
+			  <th>Sort</th>
+			  <th class="mdl-data-table__cell--non-numeric">Typ</th>
+			  <th>Sub</th>
+			  <th class="mdl-data-table__cell--non-numeric">Status</th>
+			  <th>Art.Num</th>
+			  <th class="mdl-data-table__cell--non-numeric">Bez</th>
+			  	<th>Offen</th>
+				<th>Bestand</th>
+				<th>Diff</th>
+				<th class="mdl-data-table__cell--non-numeric">EH</th>
+				<th>Preis</th>
+				<th class="mdl-data-table__cell--non-numeric">EH</th>
+
 			</tr>
 			</thead>
 			<tbody>
-			<tr onclick="javascript: alert('Clicked');">
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
 			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-			  <td>25</td>
-			  <td>$2.90</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-			  <td>50</td>
-			  <td>$1.25</td>
-			</tr>
-			<tr>
-			  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-			  <td>10</td>
-			  <td>$2.35</td>
+			<td>1</td>
+			<td>0001</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>24115</td>
+			<td class="mdl-data-table__cell--non-numeric">Fladenbrot foliert (500 g)</td>
+			<td>3.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>0.89</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>2</td>
+			<td>0002</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841000</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Weissbrot/Toskana (600 g)</td>
+			<td>2.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.29</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>3</td>
+			<td>0003</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841011</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Wachauer Laib verp (500 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.99</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>4</td>
+			<td>0004</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841021</td>
+			<td class="mdl-data-table__cell--non-numeric">A. Toskana (400 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">KI a 4 STK</td>
+			<td>1.00</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>5</td>
+			<td>0005</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841033</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Französ. Baguette (250 g)</td>
+			<td>12.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.39</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>6</td>
+			<td>0006</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841400</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Tir.Schwarzbrot1kg (1000 g)</td>
+			<td>2.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.29</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>7</td>
+			<td>0007</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841401</td>
+			<td class="mdl-data-table__cell--non-numeric">A. Tirol.Krustenbrot (500 g)</td>
+			<td>10.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.00</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>8</td>
+			<td>0008</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841420</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Vinschgerlaib verp (500 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">KI a 6 STK</td>
+			<td>1.69</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>9</td>
+			<td>0009</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>842000</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Bäckersemmel 10er (460 g)</td>
+			<td>2.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">KI a 4 PKG</td>
+			<td>1.00</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/PKG</td>
+
+			</tr><tr>
+			<td>10</td>
+			<td>0010</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>842012</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Kaisersemmel 5er (300 g)</td>
+			<td>2.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">KI a 6 PKG</td>
+			<td>0.69</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/PKG</td>
+
+			</tr><tr>
+			<td>11</td>
+			<td>0011</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>842034</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Mantovane 3er (300 g)</td>
+			<td>2.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">KI a 4 PKG</td>
+			<td>1.00</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/PKG</td>
+
+			</tr><tr>
+			<td>12</td>
+			<td>0012</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>843003</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Tiroler Butterzopf (400 g)</td>
+			<td>2.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">KI a 3 STK</td>
+			<td>1.50</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>13</td>
+			<td>0013</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>843005</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Marillenkrapfen4er (240 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">KI a 6 PKG</td>
+			<td>1.50</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/PKG</td>
+
+			</tr><tr>
+			<td>14</td>
+			<td>0014</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841018</td>
+			<td class="mdl-data-table__cell--non-numeric">A.WachauerLaib gesch (500 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>2.29</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>15</td>
+			<td>0015</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841025</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Tir.Weissbrot ges. (400 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.99</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>16</td>
+			<td>0016</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841430</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Tir.Hausbrot gesch (500 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.99</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>17</td>
+			<td>0017</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841431</td>
+			<td class="mdl-data-table__cell--non-numeric">A.T.Steinofenb.gesch (400 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.99</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>18</td>
+			<td>0018</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841722</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Tiroler Kornbrot (300 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.79</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>19</td>
+			<td>0019</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>841723</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Sonnenblumenbrot (300 g)</td>
+			<td>1.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">STK</td>
+			<td>1.79</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/STK</td>
+
+			</tr><tr>
+			<td>20</td>
+			<td>0020</td>
+			<td class="mdl-data-table__cell--non-numeric">Einzel</td>
+			<td>0</td>
+			<td class="mdl-data-table__cell--non-numeric">Avis</td>
+			<td>844348</td>
+			<td class="mdl-data-table__cell--non-numeric">A.Punschschnitte (380 g)</td>
+			<td>2.00</td>
+			<td>0.00</td>
+			<td>0.00</td>
+			<td class="mdl-data-table__cell--non-numeric">KI a 8 PKG</td>
+			<td>2.49</td>
+			<td class="mdl-data-table__cell--non-numeric">EUR/PKG</td>
 			</tr>
 			</tbody>
 			</table>
 
   </section>
 
-
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-  <i class="material-icons">add</i>
-</button>
-  </section>
-	  <section></section>
+  <section> </section>
   </main>
   </div>
   
